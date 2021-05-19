@@ -14,6 +14,7 @@ The solutions folder contains code to the given  problems
         - 400_BAD_REQUEST if any of the request fields are missing
     5. **Sample Postman request:**
         - https://www.getpostman.com/collections/efa4b9f2107e3ebbd872
+
 2. **API: Can login as a user**
     1. **Method:** POST
     2. **Endpoint:** /login/
@@ -30,10 +31,15 @@ The solutions folder contains code to the given  problems
     6. **Sample Postman request:**
         - https://www.getpostman.com/collections/efa4b9f2107e3ebbd872
 
-3. **Template: Solve problems**
+3. **Template: Solve problem**
     1. **Endpoint:** /api/v1/calculate/
     2. **Input:**
-        - x and n for problem 1
-        - x, y, a, b for problem 3
+        - x and n values for problem 1
     3. **Output:**
         - result
+    4. **Authentication:**:
+        - only users with valid csrftoken can access the page.
+
+***Notes:***
+- *Please use Postman calls for testing the register and login features*
+- *Go to endpoint http://127.0.0.1:9000/api/v1/calculate/ directly to view working frontend template of problem 1 (I have not created frontend templates for other features.)*

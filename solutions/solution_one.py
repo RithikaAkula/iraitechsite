@@ -30,7 +30,7 @@ input_two = int(input("Enter value of n: "))
 
 if isinstance(input_one,int) and isinstance(input_two,int):
     
-    answer = perform_compute_2(input_one,input_two)
+    answer = perform_compute_1(input_one,input_two)
 else:
     
     answer="Enter valid integers."

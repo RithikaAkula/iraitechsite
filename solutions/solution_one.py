@@ -20,16 +20,21 @@ def compute(x, n):
     
     return nth_term(x,n)+compute(x, n-1)
 
+'''
 
-# print("The given expression is reduced to '(1 - 1/x^n) / (x - 1)'")
-# input_one = int(input("Enter value of x: "))
-# input_two = int(input("Enter value of n: "))
+# Driver Code
 
-# if isinstance(input_one,int) and isinstance(input_two,int):
+print("The given expression is reduced to '(1 - 1/x^n) / (x - 1)'")
+input_one = int(input("Enter value of x: "))
+input_two = int(input("Enter value of n: "))
+
+if isinstance(input_one,int) and isinstance(input_two,int):
     
-#     answer = perform_compute_2(input_one,input_two)
-# else:
+    answer = perform_compute_2(input_one,input_two)
+else:
     
-#     answer="Enter valid integers."
+    answer="Enter valid integers."
 
-# print(answer)
+print(answer)
+
+'''

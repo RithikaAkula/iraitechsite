@@ -2,7 +2,6 @@ from django.shortcuts import render
 from solutions.solution_one import perform_compute_1
 from solutions.solution_three import perform_compute_2
 
-# Create your views here.
 
 def index(request):
     return render(request, "calculate/calculate.html")

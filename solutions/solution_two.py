@@ -8,4 +8,11 @@ def nth_term(value) :
  
     return nth
 
-# print(nth_term(9))
+
+'''
+
+# Driver Code
+
+print(nth_term(9))
+
+'''

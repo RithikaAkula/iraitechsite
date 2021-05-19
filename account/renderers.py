@@ -1,6 +1,5 @@
 import json
 from rest_framework.renderers import JSONRenderer
-from collections import OrderedDict
 
 
 class UserJSONRenderer(JSONRenderer):
@@ -11,11 +10,6 @@ class UserJSONRenderer(JSONRenderer):
         
         email = data.get('email', None)
         name = data.get('name', None)
-
-        # if email is not None and name is not None:
-        #     finaldata.pop('email')
-        #     finaldata.pop('name')
-        #     return json.dumps(finaldata)
 
         return json.dumps(data)
 

@@ -1,7 +1,4 @@
-# from typing_extensions import Required
 from django.db import models
-import jwt
-from datetime import datetime, timedelta
 from django.conf import settings
 from django.contrib.auth.models import (
     AbstractBaseUser, BaseUserManager, PermissionsMixin
@@ -44,7 +41,6 @@ class UserManager(BaseUserManager):
 
 class User(AbstractBaseUser, PermissionsMixin):
 
-    # name = models.CharField(db_index=True, max_length=60, unique=True)
     email = models.EmailField(db_index=True, unique=True)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)

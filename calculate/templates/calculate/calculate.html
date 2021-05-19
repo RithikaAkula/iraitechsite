@@ -1,0 +1,30 @@
+{% extends 'calculate/base.html' %}
+
+{% block content %}
+
+<hr>
+<h2>Problem 1</h2>
+<form action="result/" method="POST">
+    {% csrf_token %}
+    <script>
+        const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+    </script>
+
+    Enter value of x: <input type="text" name="x"><br><br>
+    Enter value of n: <input type="text" name="n"><br><br>
+    <input type="submit">
+</form>
+<br>
+<hr>
+<h2>Problem 3</h2>
+<form action="result2/" method="POST">
+    {% csrf_token %}
+
+    Enter value of x: <input type="text" name="x"><br><br>
+    Enter value of y: <input type="text" name="y"><br><br>
+    Enter value of a: <input type="text" name="a"><br><br>
+    Enter value of b: <input type="text" name="b"><br><br>
+    <input type="submit">
+</form>
+
+{% endblock %}

@@ -33,7 +33,7 @@ The solutions folder contains code to the given  problems
 3. **Template: Solve problems**
     1. **Endpoint:** /api/v1/calculate/
     2. **Input:**
-        1. x and n for problem 1
-        2. x, y, a, b for problem 3
+        - x and n for problem 1
+        - x, y, a, b for problem 3
     3. **Output:**
         - result

@@ -2,6 +2,8 @@
 
 The solutions folder contains code to the given  problems
 
+Kindly use "python manage.py runserver 127.0.0.1:9000" to run the code at specified endpoint
+
 1. **API: Register to site**
     1. **Method:** POST
     2. **Endpoint:** /register/
